@@ -1,0 +1,10 @@
+project-portal/
+│
+├── index.html          (Login Page)
+├── dashboard.html      (Dashboard with logo + navigation + logout)
+├── tracker.html        (Project Tracker page with form + list)
+├── style.css           (Shared styling)
+├── firebase-config.js  (Firebase setup)
+├── login.js            (Handles login/signup)
+├── dashboard.js        (Handles logout + navigation)
+└── tracker.js          (Handles project CRUD)

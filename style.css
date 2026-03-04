@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+input, button, select, textarea {
+  margin: 8px 0;
+  padding: 8px;
+  width: 300px;
+  max-width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005a9e;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0078d7;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#projectList li {
+  margin: 5px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Container for grouping inputs */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* spacing between fields */
+  margin-bottom: 15px;
+}
+
+/* Each input/select/textarea inside a row */
+.form-row > * {
+  flex: 1;              /* evenly distribute space */
+  min-width: 200px;     /* prevent shrinking too small */
+}

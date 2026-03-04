@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Project Tracker</h1>
+
+	<div id="tracker">
+	  <h2>Create Project</h2>
+
+	  <!-- Row 1 -->
+	  <div class="form-row">
+		<input type="text" id="projectName" placeholder="Project Name">
+		<input type="text" id="processName" placeholder="Process Name">
+		<input type="text" id="processOwner" placeholder="Process Owner">
+	  </div>
+
+	  <!-- Row 2 -->
+	  <div class="form-row">
+		<input type="text" id="spocName" placeholder="SPOC Name">
+		<input type="text" id="vertical" placeholder="Vertical">
+		<input type="text" id="horizontal" placeholder="Horizontal">
+	  </div>
+
+	  <!-- Row 3 -->
+	  <div class="form-row">
+		<input type="date" id="startDate">
+		<input type="date" id="endDate">
+		<input type="text" id="bcslaNumber" placeholder="BCSLA Number">
+	  </div>
+
+	  <!-- Row 4 -->
+	  <div class="form-row">
+		<textarea id="problemStatement" placeholder="Problem Statement"></textarea>
+		<textarea id="solution" placeholder="Solution"></textarea>
+		<select id="technology">
+		  <option value="Select" selected>Select Technology</option>
+		  <option value="VbaMacro">VBA MACRO</option>
+		  <option value="DotNet">DOT NET</option>
+		  <option value="Python">PYTHON</option>
+		  <option value="PowerBI">POWER BI</option>
+		  <option value="PowerAutomate">POWER AUTOMATE</option>
+		</select>
+	  </div>
+
+	  <!-- Row 5 -->
+	  <div class="form-row">
+		<select id="developerName">
+		  <option value="Select" selected>Select Developer</option>
+		  <option value="Ajay">Ajay</option>
+		  <option value="Harshada">Harshada</option>
+		  <option value="Minal">Minal</option>
+		  <option value="Prashant">Prashant</option>
+		  <option value="Pundlik">Pundlik</option>
+		</select>
+
+		<select id="projectStatus">
+		  <option value="Select" selected>Select Status</option>
+		  <option value="Requirement Gathering">Requirement Gathering</option>
+		  <option value="In Process">In Process</option>
+		  <option value="On Hold">On Hold</option>
+		  <option value="Completed">Completed</option>
+		</select>
+
+		<button id="addProjectBtn">Add Project</button>
+	  </div>
+
+	  <h2>Projects List</h2>
+	  <ul id="projectList"></ul>
+	</div>
+
+  <script type="module" src="tracker.js"></script>
+</body>
+</html>

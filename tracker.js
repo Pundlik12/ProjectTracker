@@ -5,6 +5,9 @@ import { collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebase
 // DOM references
 const addProjectBtn = document.getElementById("addProjectBtn");
 const projectTableBody = document.querySelector("#projectTable tbody");
+const developerFilter = document.getElementById("developerFilter");
+const statusFilter = document.getElementById("statusFilter");
+const searchBox = document.getElementById("searchBox");
 
 onAuthStateChanged(auth, user => 
 {
@@ -97,10 +100,6 @@ function subscribeProjects()
     });
   });
 }
-
-const developerFilter = document.getElementById("developerFilter");
-const statusFilter = document.getElementById("statusFilter");
-const searchBox = document.getElementById("searchBox");
 
 function applyFilters() 
 {

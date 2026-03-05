@@ -5,7 +5,6 @@ import { collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebase
 // DOM references
 const addProjectBtn = document.getElementById("addProjectBtn");
 const projectTableBody = document.querySelector("#projectTable tbody");
-const searchBox = document.getElementById("searchBox");
 
 onAuthStateChanged(auth, user => 
 {
@@ -69,7 +68,6 @@ addProjectBtn.addEventListener("click", async () => {
 // Display projects in table
 function subscribeProjects() 
 {
-	alert("subscribeProjects..");
   onSnapshot(collection(db, "projects"), snapshot => {
     projectTableBody.innerHTML = "";
     snapshot.forEach(docSnap => {
@@ -129,4 +127,3 @@ function applyFilters()
 statusFilter.addEventListener("change", applyFilters);
 developerFilter.addEventListener("change", applyFilters);
 searchBox.addEventListener("keyup", applyFilters);
-
